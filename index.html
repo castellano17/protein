@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/supplements.css" />
+    <title>Mi Página Web</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="supplements/logo-proteina.png" alt="implements" />
+        </div>
+        <ul class="menu">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="carrito">
+          <i class="fas fa-shopping-cart"></i>
+          <span id="cart-count">0</span>
+        </div>
+        <div id="cart-popup" class="cart-popup">
+          <div class="cart-content">
+            <button id="close-cart" class="close-cart">&times;</button>
+            <!-- Botón X para cerrar -->
+            <h3>Tu carrito</h3>
+            <div id="cart-items" class="cart-items"></div>
+            <button id="checkout-btn">Pagar</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Centro -->
+    <main>
+      <!-- header info -->
+      <section class="header-container" id="inicio">
+        <div class="header-info">
+          <h1>Proteina extra para tí.</h1>
+          <p>
+            Libere vitalidad y fuerza con Extra Power Proteins. Mejore sus
+            entrenamientos, amplifique el crecimiento muscular y aumente sus
+            niveles de energía para un estilo de vida de alto rendimiento.
+          </p>
+          <a href="#productos" class="btn">Ver Productos</a>
+        </div>
+        <div class="header-img">
+          <img src="supplements/images/hero.png" alt="Proteina" />
+        </div>
+      </section>
+
+      <!--end header info -->
+
+      <section class="cards" id="productos">
+        <div class="card" data-id="1">
+          <img
+            src="supplements/images/cards/baso1.jpg"
+            alt="Producto Animo"
+            class="product-img"
+          />
+          <h3>Animo en polvo</h3>
+          <p>Energia en tu entrenamiento.</p>
+          <p class="price">C$ 350.99</p>
+          <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+        <div class="card" data-id="2">
+          <img
+            src="supplements/images/cards/baso2.jpg"
+            alt="Producto Creatitina"
+            class="product-img"
+          />
+          <h3>Creatitina en polvo</h3>
+          <p>Energia y aumento de peso</p>
+          <p class="price">C$ 1250.99</p>
+          <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+        <div class="card" data-id="3">
+          <img
+            src="supplements/images/cards/baso3.jpg"
+            alt="Producto whey"
+            class="product-img"
+          />
+          <h3>Proteina Whey</h3>
+          <p>Excelente si quieres aumentar de peso.</p>
+          <p class="price">C$ 835.99</p>
+          <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+      </section>
+
+      <!-- nosotros -->
+      <section class="nosotros-container" id="nosotros">
+        <div class="nosotros-container-body">
+          <div class="nosotros-img">
+            <img src="supplements/images/section-bg-2.jpg" alt="Proteina" />
+          </div>
+          <div class="nosotros-info">
+            <h2>Te ofrecemos la mejor proteína para tu dáa a día</h2>
+            <p>
+              No importa si eres nuevo en el mundo del fitness o si eres un
+              atleta experimentado, <strong>Proteins</strong> tiene la proteína
+              perfecta para ti. Nuestros productos están diseñados para
+              proporcionar los nutrientes necesarios para ayudarte a alcanzar
+              tus objetivos de fitness.
+            </p>
+            <a href="#productos" class="btn">Ver Productos</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- nosotros end-->
+
+      <!-- contacto -->
+      <!-- contacto -->
+      <section class="contacto-container" id="contacto">
+        <div class="contacto-container-body">
+          <div class="contacto-info">
+            <h2>LLámanos</h2>
+            <p>+ (505) 8888-8888</p>
+          </div>
+
+          <!-- Formulario de contacto -->
+          <div class="contacto-form">
+            <form action="#" method="POST">
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Tu Nombre"
+                required
+              />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Tu Correo"
+                required
+              />
+              <textarea
+                id="mensaje"
+                name="mensaje"
+                placeholder="Tu Mensaje"
+                required
+              ></textarea>
+              <button type="submit">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- contacto end-->
+
+      <!-- Footer -->
+      <footer class="footer-container">
+        <p>© 2024 Todos los derechos Reservados</p>
+        <a href="mailto:info@protein.com">info@protein.com</a>
+        <div class="footer-redes">
+          <a href="https://www.facebook.com/protein" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/protein" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.twitter.com/protein" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+      </footer>
+    </main>
+
+    <script src="js/supplements.js"></script>
+  </body>
+</html>
